@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+-本模板源码由蕊蕊博客倾尽心血打造，希望各位模仿者手下留情，望佛祖保佑蕊蕊博客SEO博客永远无BUG!
+-对了，有需要了解的代码可以自己先鼓捣下，搞不定可以QQ 1612704618 联系我
+-前端开发Rui rui QQ：1612704618
+-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="BED WARS | 体验服" /><!-- 更多mc腐竹工具，源码+QQ 1612704618 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>BED WARS | 体验服</title><!-- 更多mc腐竹工具，源码+QQ 1612704618 -->
+		<link rel="stylesheet" type="text/css" href="static/css/main.css">
+        <link rel="icon" href="./img/logo.jpeg" type="image/x-icon">
+		<script src="static/js/main.js"></script>
+		<style type="text/css">
+			.loading{width: 100%;height: 100%;z-index: 100;position: fixed;background: #000000;}.loading-img{width: 480px;height: 720px;margin: auto;}#menu-box{position: fixed;overflow: hidden;width: 100%;transition-duration:0.4s;height: 50px;background: none;}.menu{width: 1005px;margin:auto;height: 50px;background:none;}.menu-item h2 a{padding-top:6px;color:#00ffff;transition-duration: 0.4s;padding-left:10px;float:left;}.menu-item a{padding:13px 15px;color:#00cfcf;float:right;transition-duration: 0.4s;}.menu-item a:hover{color:rgb(0, 255, 255);font-size:20px;}.menu-item h2 a:hover{color:rgb(0, 255, 255);font-size:27px;}#item-box{height: 130px;background:rgb(255, 255, 255);overflow: hidden;}
+		</style>
+	</head>
+	<script>
+		document.onreadystatechange=function(){
+			if(document.readyState=="complete"){
+				$(".loading").fadeOut();
+			}
+		}
+	</script>
+	<body>
+		<div class="loading">
+			<div class="loading-img">
+			</div>
+		</div>
+
+		<div id="banner">
+            <div style="display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+                <h1>
+                    <img src="static/images/qrcode_1734871301461.jpg" alt="QQ群：692980519" width="500"></a>
+                </h1>
+            </div>
+		<div id="item-box">
+			<div class="item-page-box">
+				<div class="item-page">
+					<h2>欢迎游玩 BED WARS 数据包!</h2>
+					你的支持将是我最大的鼓励！					2024/12/22					  <hr>
+
+					</div>
+				</div>
+			</div>
+			<div id="footer">
+				<p id="counter"></p>
+				<p><a target="_blank">© 2024 NOX OBSCURA</a></p>
+			</div>
+		</div>	
+		<script src="static/js/jquery.js"></script>
+	<script>
+			function scroll() {
+					var top = $("#item-box").offset().top;
+					var scrollTop = $(window).scrollTop();
+					if (scrollTop < top) {
+						$('#menu-box').css({"background":"none"});
+						$('#menu-box').css({"box-shadow":"none"});
+						$(".menu-item h2 a").css({"color":"#C6CDD4"})
+						$(".menu-item a").css({"color":"#C6CDD4"});
+					} else {
+						$("#menu-box").css({"background":"#FFFFFF"});
+						$("#menu-box").css({"box-shadow":"0px 0px 8px #EAEAEA"});
+						$(".menu-item h2 a").css({"color":"#333333"})
+						$(".menu-item-list a").css({"color":"#333333"});
+					}
+				}
+				$(window).on('scroll', function() {
+					scroll()
+				});
+		</script>
+	</body>
+</html>
